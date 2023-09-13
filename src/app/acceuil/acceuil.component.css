@@ -1,0 +1,44 @@
+/* Style de l'en-tête */
+header.jumbotron {
+    /*background-image: url('images/header-background.jpg');  Image de la bannière */
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    padding: 100px 0;
+}
+
+header .btn-primary {
+    background-color: #ff6600; /* Couleur du bouton */
+    border: none;
+}
+
+/* Style de la barre de navigation */
+.navbar {
+    background-color: #fff; /* Couleur de fond de la barre de navigation */
+}
+
+.navbar .nav-link {
+    color: #333; /* Couleur des liens de la barre de navigation */
+}
+
+.navbar .navbar-toggler-icon {
+    border-color: #333; /* Couleur de l'icône de bascule de la barre de navigation */
+}
+
+/* Style des cartes des lieux touristiques */
+.card {
+    margin-bottom: 20px;
+}
+
+/* Style du pied de page */
+footer {
+    background-color: #333; /* Couleur de fond du pied de page */
+    color: #fff; /* Couleur du texte du pied de page */
+}
+
+/* Exemple d'animation pour le bouton "Commencer" */
+header .btn-primary:hover {
+    background-color: #ff9933; /* Couleur de survol du bouton */
+    transform: scale(1.1); /* Animation de mise à l'échelle au survol */
+    transition: background-color 0.3s, transform 0.3s; /* Durée de l'animation */
+}

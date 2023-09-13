@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application de Tourisme Virtuel</title>
+    <!-- Inclure Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app.component.css">
+</head>
+<body>
+
+<!-- Barre de navigation Bootstrap -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- Ajout de la balise de fin </nav> manquante ici -->
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/logo KN.jpg" alt="Votre Logo" width="100" height="100" class="d-inline-block align-top">
+        </a>
+        <div class="mx-auto order-0">
+            <!-- Insérez ici vos éléments de menu, par exemple les liens de navigation -->
+        </div>
+    </nav>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link nav-link-light-effect" href="#decouvrir">Découvrir</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-link-light-effect" href="#reserver">Réserver</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-link-light-effect" href="#apropos">A Propos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-link-light-effect" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Section de bannière -->
+<header class="jumbotron text-center">
+    <h1 class="display-4">Explorez le Sénégal en ligne</h1>
+    <p class="lead">Découvrez les merveilles du Sénégal depuis chez vous</p>
+    <a class="btn btn-primary btn-lg" href="#decouvrir" role="button">Commencer</a>
+</header>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <div class="animated-text">
+                <p class="lead"> Le Sénégal, situé à l'extrémité ouest de l'Afrique, est un pays d'une beauté incomparable. 
+                    Avec ses plages dorées, ses parcs nationaux époustouflants et sa richesse culturelle, 
+                    il offre une expérience touristique unique. Explorez les ruelles colorées de Dakar, 
+                    découvrez la majesté du désert de Lompoul, plongez dans la culture sérère de Joal-Fadiouth 
+                    et laissez-vous émerveiller par la faune du parc national de Niokolo-Koba. 
+                    Le Sénégal a tant à offrir aux voyageurs curieux et aux amoureux de la nature. 
+                    Préparez-vous à une aventure inoubliable </p>
+                <p class="lead">Explorez ses sites uniques et découvrez sa beauté époustouflante.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Section de découverte -->
+<section id="decouvrir" class="container py-5">
+    <!-- Exemple de carte Bootstrap pour un lieu touristique -->
+    <div class="card-deck">
+        <div class="card">
+            <img src="assets/images/img lacRos.jpeg" class="card-img-top" alt="Lieu 1">
+
+            <div class="card-body">
+                <h5 class="card-title">Le lac Rose a Dakar</h5>
+                <p class="card-text">Découvrez la beauté de ce lieu unique.</p>
+                <a href="#" class="btn btn-primary">Explorer</a>
+            </div>
+        </div>
+        <!-- Ajoutez plus de cartes ici pour d'autres lieux touristiques -->
+    </div>
+</section>
+
+<!-- Section de réservation -->
+<section id="reserver" class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center">Réservez votre visite en présentiel</h2>
+        <p class="text-center">Explorez ces merveilleux endroits en personne</p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/visite1.jpg" class="card-img-top" alt="Visite 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Visite Guidée 1</h5>
+                        <p class="card-text">Description de la visite.</p>
+                        <a href="#" class="btn btn-primary">Réserver maintenant</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Ajoutez plus de cartes pour d'autres visites guidées -->
+        </div>
+    </div>
+</section>
+
+<!-- Section d'informations pratiques -->
+<section id="apropos" class="container py-5">
+    <h2 class="text-center">À Propos de Nous</h2>
+    <p class="text-center">Découvrez tout ce que vous devez savoir sur notre application.</p>
+    <!-- Ajoutez ici des informations pratiques sur l'application -->
+</section>
+
+<!-- Pied de page -->
+<footer id="contact" class="bg-dark text-white text-center py-3">
+    <div class="container">
+        <p>Contactez-nous à l'adresse email@example.com</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Facebook</a></li>
+            <li class="list-inline-item"><a href="#">Twitter</a></li>
+            <li class="list-inline-item"><a href="#">Instagram</a></li>
+        </ul>
+    </div>
+</footer>
+
