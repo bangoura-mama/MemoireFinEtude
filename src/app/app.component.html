@@ -7,35 +7,29 @@
     <!-- Inclure Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="app.component.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Inclure Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
 </head>
 <body>
 
 <!-- Barre de navigation Bootstrap -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#"></a>
+    <a class="navbar-brand" href="#">
+        <img src="assets/images/logo KND1.jpg" alt="Votre Logo" width="100" height="100" class="d-inline-block align-top">
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     
-    <!-- Ajout de la balise de fin </nav> manquante ici -->
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <img src="assets/images/logo KN.jpg" alt="Votre Logo" width="100" height="100" class="d-inline-block align-top">
-        </a>
-        <div class="mx-auto order-0">
-            <!-- Insérez ici vos éléments de menu, par exemple les liens de navigation -->
-        </div>
-    </nav>
-    
+
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
                 <a class="nav-link nav-link-light-effect" href="#decouvrir">Découvrir</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link nav-link-light-effect" href="#reserver">Réserver</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link nav-link-light-effect" href="#apropos">A Propos</a>
@@ -47,71 +41,144 @@
     </div>
 </nav>
 
+
 <!-- Section de bannière -->
 <header class="jumbotron text-center">
     <h1 class="display-4">Explorez le Sénégal en ligne</h1>
     <p class="lead">Découvrez les merveilles du Sénégal depuis chez vous</p>
     <a class="btn btn-primary btn-lg" href="#decouvrir" role="button">Commencer</a>
 </header>
+<!-- Texte d'animation avec classes Bootstrap -->
 <div class="container">
     <div class="row">
         <div class="col-md-12 text-center">
             <div class="animated-text">
-                <p class="lead"> Le Sénégal, situé à l'extrémité ouest de l'Afrique, est un pays d'une beauté incomparable. 
+                <p class="lead">
+                    Le Sénégal, situé à l'extrémité ouest de l'Afrique, est un pays d'une beauté incomparable. 
                     Avec ses plages dorées, ses parcs nationaux époustouflants et sa richesse culturelle, 
                     il offre une expérience touristique unique. Explorez les ruelles colorées de Dakar, 
                     découvrez la majesté du désert de Lompoul, plongez dans la culture sérère de Joal-Fadiouth 
                     et laissez-vous émerveiller par la faune du parc national de Niokolo-Koba. 
                     Le Sénégal a tant à offrir aux voyageurs curieux et aux amoureux de la nature. 
-                    Préparez-vous à une aventure inoubliable </p>
-                <p class="lead">Explorez ses sites uniques et découvrez sa beauté époustouflante.</p>
+                    Préparez-vous à une aventure inoubliable !
+                </p>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Section de découverte -->
+
+
+<section id="sites-visites" class="container py-5">
+    <h2 class="text-center">Les sites les plus visités</h2>
+    <!-- Ajoutez ici les contenus des sites visités -->
+</section>
+
 <section id="decouvrir" class="container py-5">
     <!-- Exemple de carte Bootstrap pour un lieu touristique -->
     <div class="card-deck">
-        <div class="card">
-            <img src="assets/images/img lacRos.jpeg" class="card-img-top" alt="Lieu 1">
-
-            <div class="card-body">
-                <h5 class="card-title">Le lac Rose a Dakar</h5>
-                <p class="card-text">Découvrez la beauté de ce lieu unique.</p>
-                <a href="#" class="btn btn-primary">Explorer</a>
-            </div>
-        </div>
-        <!-- Ajoutez plus de cartes ici pour d'autres lieux touristiques -->
-    </div>
-</section>
-
-<!-- Section de réservation -->
-<section id="reserver" class="bg-light py-5">
-    <div class="container">
-        <h2 class="text-center">Réservez votre visite en présentiel</h2>
-        <p class="text-center">Explorez ces merveilleux endroits en personne</p>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="images/visite1.jpg" class="card-img-top" alt="Visite 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Visite Guidée 1</h5>
-                        <p class="card-text">Description de la visite.</p>
-                        <a href="#" class="btn btn-primary">Réserver maintenant</a>
-                    </div>
+        <div class="card card-1 bounce-continuous with-background">
+            <div class="background-image">
+                <!-- Contenu de la carte 1 -->
+                <div class="card-body">
+                    <h5 class="card-title">Le lac Rose à Dakar</h5>
+                    <p class="card-text">Découvrez la beauté de ce lieu unique.</p>
+                    <a href="#" class="btn btn-primary">Explorer</a>
                 </div>
             </div>
-            <!-- Ajoutez plus de cartes pour d'autres visites guidées -->
+        </div>
+        <div class="card card-2 bounce-continuous with-background">
+            <div class="background-image">
+                <!-- Contenu de la carte 2 -->
+                <div class="card-body">
+                    <h5 class="card-title">L'île de Gorée</h5>
+                    <p class="card-text">Découvrez la beauté de ce lieu unique.</p>
+                    <a href="#" class="btn btn-primary">Explorer</a>
+                </div>
+            </div>
+        </div>
+        <div class="card card-3 bounce-continuous with-background">
+            <div class="background-image">
+                <!-- Contenu de la carte 3 -->
+                <div class="card-body">
+                    <h5 class="card-title">Les dunes de Lompoul</h5>
+                    <p class="card-text">Découvrez la beauté de ce lieu unique.</p>
+                    <a href="#" class="btn btn-primary">Explorer</a>
+                </div>
+            </div>
+        </div>
+        <div class="card card-4 bounce-continuous with-background">
+            <div class="background-image">
+                <!-- Contenu de la carte 4 -->
+                <div class="card-body">
+                    <h5 class="card-title">La Mosquée de Touba</h5>
+                    <p class="card-text">Découvrez la beauté de ce lieu unique.</p>
+                    <a href="#" class="btn btn-primary">Explorer</a>
+                </div>
+            </div>
+        </div>
+        <div class="card card-5 bounce-continuous with-background">
+            <div class="background-image">
+                <!-- Contenu de la carte 5 -->
+                <div class="card-body">
+                    <h5 class="card-title">La ville de Saint-Louis</h5>
+                    <p class="card-text">Découvrez la beauté de ce lieu unique.</p>
+                    <a href="#" class="btn btn-primary">Explorer</a>
+                </div>
+            </div>
+        </div>
+        <div class="card card-6 bounce-continuous random-margin">
+            <div class="card-body">
+                <!-- Contenu de la carte 6 -->
+                <h5 class="card-title">Les îles du Sine-Saloum N'Gor</h5>
+                <p class="card-text">Découvrez la beauté de ce lieu unique.</p>
+                <a href="lien-site6.html" class="btn btn-primary">Explorer</a>
+            </div>
         </div>
     </div>
 </section>
+
+
+
 
 <!-- Section d'informations pratiques -->
 <section id="apropos" class="container py-5">
-    <h2 class="text-center">À Propos de Nous</h2>
-    <p class="text-center">Découvrez tout ce que vous devez savoir sur notre application.</p>
+  <!-- Section À Propos de Nous -->
+<!-- Section À Propos de Nous -->
+<section id="apropos" class="container py-5">
+    <h2 class="text-center mb-4">À Propos de Nous</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="text-center">
+                <i class="fas fa-5x fa-globe mb-3"></i>
+                <h3>Notre Mission</h3>
+            </div>
+            <p>Nous sommes passionnés par la découverte et la promotion de la beauté du Sénégal. Notre mission est de vous offrir une expérience touristique virtuelle inoubliable.</p>
+        </div>
+        <div class="col-md-4">
+            <div class="text-center">
+                <i class="fas fa-5x fa-heart mb-3"></i>
+                <h3>Nos Valeurs</h3>
+            </div>
+            <ul>
+                <li><i class="fas fa-check-circle"></i> Engagement envers la qualité</li>
+                <li><i class="fas fa-check-circle"></i> Respect de la culture locale</li>
+                <li><i class="fas fa-check-circle"></i> Durabilité et responsabilité</li>
+                <li><i class="fas fa-check-circle"></i> Innovation continue</li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <div class="text-center">
+                <i class="fas fa-5x fa-users mb-3"></i>
+                <h3>Notre Équipe</h3>
+            </div>
+            <p>Nous sommes une équipe dévouée de passionnés du voyage, de développeurs et de créatifs qui travaillent ensemble pour vous offrir la meilleure expérience virtuelle du Sénégal.</p>
+        </div>
+    </div>
+</section>
+
+
+
     <!-- Ajoutez ici des informations pratiques sur l'application -->
 </section>
 
@@ -126,4 +193,5 @@
         </ul>
     </div>
 </footer>
-
+</body>
+</html>
