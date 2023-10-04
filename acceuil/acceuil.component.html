@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application de Tourisme Virtuel</title>
+    <!-- Inclure Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="acceuil.component.css">
+</head>
+<body>
+
+<!-- Barre de navigation Bootstrap -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Tourisme Virtuel</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#decouvrir">Découvrir</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#reserver">Réserver</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#apropos">A Propos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Section de bannière -->
+<header class="jumbotron text-center">
+    <img src="/assets/images/test2.jpg" alt="img">
+    <h1 class="display-4">Explorez le Sénégal en ligne</h1>
+    <p class="lead">Découvrez les merveilles du Sénégal depuis chez vous</p>
+    <a class="btn btn-primary btn-lg" href="#decouvrir" role="button">Commencer</a>
+</header>
+
+<!-- Section de découverte -->
+<section id="decouvrir" class="container py-5">
+    <!-- Exemple de carte Bootstrap pour un lieu touristique -->
+    <div class="card-deck">
+        <div class="card">
+            <img src="images/lieu1.jpg" class="card-img-top" alt="Lieu 1">
+            <div class="card-body">
+                <h5 class="card-title">Lieu Touristique 1</h5>
+                <p class="card-text">Découvrez la beauté de ce lieu unique.</p>
+                <a href="#" class="btn btn-primary">Explorer</a>
+            </div>
+        </div>
+        <!-- Ajoutez plus de cartes ici pour d'autres lieux touristiques -->
+    </div>
+</section>
+
+<!-- Section de réservation -->
+<section id="reserver" class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center">Réservez votre visite en présentiel</h2>
+        <p class="text-center">Explorez ces merveilleux endroits en personne</p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/visite1.jpg" class="card-img-top" alt="Visite 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Visite Guidée 1</h5>
+                        <p class="card-text">Description de la visite.</p>
+                        <a href="#" class="btn btn-primary">Réserver maintenant</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Ajoutez plus de cartes pour d'autres visites guidées -->
+        </div>
+    </div>
+</section>
+
+<!-- Section d'informations pratiques -->
+<section id="apropos" class="container py-5">
+    <h2 class="text-center">À Propos de Nous</h2>
+    <p class="text-center">Découvrez tout ce que vous devez savoir sur notre application.</p>
+    <!-- Ajoutez ici des informations pratiques sur l'application -->
+</section>
+
+<!-- Pied de page -->
+<footer id="contact" class="bg-dark text-white text-center py-3">
+    <div class="container">
+        <p>Contactez-nous à l'adresse email@example.com</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Facebook</a></li>
+            <li class="list-inline-item"><a href="#">Twitter</a></li>
+            <li class="list-inline-item"><a href="#">Instagram</a></li>
+        </ul>
+    </div>
+</footer>
+
+<!-- Inclure Bootstrap JS et jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
