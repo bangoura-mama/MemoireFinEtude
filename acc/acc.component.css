@@ -1,0 +1,596 @@
+/* Style de l'en-tête */
+header{
+    background-image: url('/assets/images/retest2.jpg');
+}
+header.jumbotron {
+    /*background-image: url('images/header-background.jpg');  Image de la bannière */
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+    padding: 100px 0;
+}
+
+header .btn-primary {
+    background-color: #e8d719; /* Couleur du bouton */
+    border: none;
+}
+
+/* Style de la barre de navigation */
+.navbar {
+    background-color: #ffffff; /* Couleur de fond de la barre de navigation */
+}
+
+.navbar .nav-link {
+    color: #333; /* Couleur des liens de la barre de navigation */
+}
+
+.navbar .navbar-toggler-icon {
+    border-color: #333; /* Couleur de l'icône de bascule de la barre de navigation */
+}
+
+/* Style des cartes des lieux touristiques */
+.card {
+    margin-bottom: 20px;
+}
+
+/* Style du pied de page */
+footer {
+    background-color: #333; /* Couleur de fond du pied de page */
+    color: #fff; /* Couleur du texte du pied de page */
+}
+
+/* Exemple d'animation pour le bouton "Commencer" */
+header .btn-primary:hover {
+    background-color: #e8d719; /* Couleur de survol du bouton */
+    transform: scale(1.1); /* Animation de mise à l'échelle au survol */
+    transition: background-color 0.3s, transform 0.3s; /* Durée de l'animation */
+}
+
+/* Style pour les liens de la barre de navigation avec effet de lumière */
+.nav-link-light-effect {
+    position: relative;
+    color: #333; /* Couleur de base du texte */
+}
+
+.nav-link-light-effect::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Hauteur de la ligne lumineuse */
+    background: #e8d719; /* Couleur de la ligne lumineuse */
+    transform: scaleX(0); /* La ligne est initialement invisible */
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.nav-link-light-effect:hover::before {
+    transform: scaleX(1); /* La ligne s'étend au survol */
+}
+/* Fond de page en blanc */
+body {
+    background-color: rgba(255, 255, 255, 0.845);
+}
+
+/* Couleur du texte en orange */
+.navbar-light .navbar-nav .nav-link {
+    color: #03652fa8; /* Couleur orange */
+}
+
+/* Couleur du texte des liens au survol */
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #269143; /* Couleur orange plus claire au survol */
+}
+
+
+/* Styles pour le texte d'animation */
+.animated-text {
+    animation: slideIn 2s ease-in-out forwards;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+/* Animation CSS */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Styles pour le texte d'animation */
+.animated-text {
+    animation: slideIn 2s ease-in-out forwards, blink 5s infinite;
+    opacity: 0;
+    transform: translateY(-20px);
+    color: #000000; /* Couleur orange pour le texte */
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.6); /* Ombre portée */
+}
+
+/* Animation CSS */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation de clignotement */
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* CSS pour les animations de rebondissement */
+@keyframes bounceInLeft {
+    0%, 20%, 40%, 60%, 80%, 100% {
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0% {
+        opacity: 0;
+        transform: translateX(-3000px);
+    }
+    20% {
+        transform: translateX(25px);
+    }
+    40% {
+        transform: translateX(-10px);
+    }
+    60% {
+        transform: translateX(5px);
+    }
+    80% {
+        transform: translateX(-2px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Appliquer l'animation aux cartes */
+.card.animated.bounceInLeft {
+    animation-name: bounceInLeft;
+}
+/* CSS pour l'animation de rebondissement continu */
+@keyframes bounceContinuous {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Appliquez l'animation aux cartes */
+.card.animate-continuous {
+    animation: bounceContinuous 10s infinite;
+}
+/* CSS pour l'animation de rebondissement continu */
+.animate__infinite {
+    animation-iteration-count: infinite !important;
+    animation-duration: 5s !important; /* Ajustez la durée de l'animation si nécessaire */
+}
+/* CSS pour l'animation de rebondissement continu */
+@keyframes bounce-continuous {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Appliquez l'animation aux éléments avec la classe bounce-continuous */
+.bounce-continuous {
+    animation: bounce-continuous 3s infinite;
+}
+
+
+
+/* Styles de base pour les cartes */
+.card {
+    width: 300px;
+    border: 1px solid #ccc;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s; /* Transition pour le changement de couleur */
+}
+
+/* Ajoutez une pseudo-classe :before pour créer l'effet de lumière */
+.card:before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    transform: scale(0);
+    transition: transform 0.3s;
+    pointer-events: none;
+}
+
+/* Au survol de chaque carte, changez la couleur d'arrière-plan et animez l'effet de lumière */
+.card-1:hover {
+    background-color: pink; /* Couleur d'arrière-plan spécifique pour la carte 1 */
+}
+.card-1:hover:before {
+    background: radial-gradient(circle, rgba(255, 0, 255, 0) 0%, rgba(209, 179, 209, 0.8) 80%);
+    transform: scale(1);
+}
+
+.card-2:hover {
+    background-color: lightblue; /* Couleur d'arrière-plan spécifique pour la carte 2 */
+}
+.card-2:hover:before {
+    background: radial-gradient(circle, rgba(173, 216, 230, 0) 0%, rgba(173, 216, 230, 0.8) 80%);
+    transform: scale(1);
+}
+.card-3:hover {
+    background-color: rgb(228, 228, 228); /* Couleur d'arrière-plan spécifique pour la carte 2 */
+}
+.card-3:hover:before {
+    background: radial-gradient(circle, rgba(235, 239, 241, 0) 0%, rgba(242, 230, 103, 0.8) 80%);
+    transform: scale(1);
+}
+.card-4:hover {
+    background-color: rgb(228, 228, 228); /* Couleur d'arrière-plan spécifique pour la carte 2 */
+}
+.card-4:hover:before {
+    background: radial-gradient(circle, rgba(235, 239, 241, 0) 0%, rgba(136, 242, 103, 0.8) 80%);
+    transform: scale(1);
+}
+.card-5:hover {
+    background-color: rgb(228, 228, 228); /* Couleur d'arrière-plan spécifique pour la carte 2 */
+}
+.card-5:hover:before {
+    background: radial-gradient(circle, rgba(235, 239, 241, 0) 0%, rgba(178, 188, 228, 0.8) 80%);
+    transform: scale(1);
+}
+.card-6:hover {
+    background-color: rgb(228, 228, 228); /* Couleur d'arrière-plan spécifique pour la carte 2 */
+}
+.card-6:hover:before {
+    background: radial-gradient(circle, rgba(235, 239, 241, 0) 0%, rgba(209, 142, 109, 0.8) 80%);
+    transform: scale(1);
+}
+
+/* Ajoutez des règles similaires pour d'autres cartes si nécessaire */
+/* Style de la carte avec image de fond */
+.card-1.with-background {
+    position: relative;
+}
+
+/* Image de fond pour la carte */
+.card-1.with-background .background-image {
+    background-image: url('/assets/images/lac rose.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.8; /* Ajustez l'opacité de l'image de fond selon vos préférences */
+    z-index: -1; /* Mettez l'image en arrière-plan */
+}
+
+/* Style du contenu de la carte */
+.card-2.with-background .card-body {
+    color: rgb(16, 15, 15);
+}
+/* Style de la carte avec image de fond */
+.card-2.with-background {
+    position: relative;
+}
+
+/* Image de fond pour la carte */
+.card-2.with-background .background-image {
+    background-image: url('/assets/images/goree.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.8; /* Ajustez l'opacité de l'image de fond selon vos préférences */
+    z-index: -1; /* Mettez l'image en arrière-plan */
+}
+
+/* Style du contenu de la carte */
+.card-3.with-background .card-body {
+    color: rgb(19, 19, 19);
+}
+.card-3.with-background {
+    position: relative;
+}
+
+/* Image de fond pour la carte */
+.card-3.with-background .background-image {
+    background-image: url('/assets/images/lompouul.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.8; /* Ajustez l'opacité de l'image de fond selon vos préférences */
+    z-index: -1; /* Mettez l'image en arrière-plan */
+}
+* Style du contenu de la carte */
+.card-4.with-background .card-body {
+    color: white;
+}
+.card-4.with-background {
+    position: relative;
+}
+
+/* Image de fond pour la carte */
+.card-4.with-background .background-image {
+    background-image: url('/assets/images/touba.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.8; /* Ajustez l'opacité de l'image de fond selon vos préférences */
+    z-index: -1; /* Mettez l'image en arrière-plan */
+}
+
+* Style du contenu de la carte */
+.card-5.with-background .card-body {
+    color: white;
+}
+.card-5.with-background {
+    position: relative;
+}
+
+/* Image de fond pour la carte */
+.card-5.with-background .background-image {
+    background-image: url('/assets/images/saint louis.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.8; /* Ajustez l'opacité de l'image de fond selon vos préférences */
+    z-index: -1; /* Mettez l'image en arrière-plan */
+}
+
+
+/* Style pour la section "Les sites les plus visités" */
+#sites-visites {
+    background-color: #f8f8f8; /* Couleur de fond */
+    padding: 20px; /* Espacement intérieur */
+    text-align: center; /* Centrage du texte */
+}
+Style du contenu de la carte */
+.card-6.with-background .card-body {
+    color: white;
+}
+.card-6.with-background {
+    position: relative;
+}
+
+/* Image de fond pour la carte */
+.card-6.with-background .background-image {
+    background-image: url('/assets/images/sine saloum.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.8; /* Ajustez l'opacité de l'image de fond selon vos préférences */
+    z-index: -1; /* Mettez l'image en arrière-plan */
+}
+
+
+/* Style pour la section "Les sites les plus visités" */
+#sites-visites {
+    background-color: #f8f8f8; /* Couleur de fond */
+     /* Espacement intérieur */
+    text-align: center; /* Centrage du texte */
+}
+
+#sites-visites p {
+    font-size: 24px; /* Taille de la police */
+    font-weight: bold; /* Gras */
+    color: #333; /* Couleur du texte */
+}
+/* Style pour le titre de la section "À Propos de Nous" */
+#apropos h2 {
+    font-size: 24px; /* Taille de la police */
+    font-weight: bold; /* Gras */
+    color: #333; /* Couleur du texte */
+    background-color: #f8f8f8;
+    padding: 20px; 
+}
+
+/* Style pour le titre de la section "Découvrez aussi" */
+#decouvrez-aussi h2 {
+    font-size: 24px; /* Taille de la police */
+    font-weight: bold; /* Gras */
+    color: #333; /* Couleur du texte */
+    background-color: #f8f8f8;
+    padding: 20px; 
+}
+
+/* Styles pour la disposition aléatoire des cartes */
+.random-card-1 {
+    position: relative;
+    left: 10px;
+    top: 20px;
+}
+
+.random-card-2 {
+    position: relative;
+    left: 50px;
+    top: -10px;
+}
+
+.random-card-3 {
+    position: relative;
+    left: -20px;
+    top: 30px;
+}
+
+.random-card-4 {
+    position: relative;
+    left: 40px;
+    top: 5px;
+}
+
+.random-card-5 {
+    position: relative;
+    left: -10px;
+    top: 15px;
+}
+
+.random-card-6 {
+    position: relative;
+    left: 30px;
+    top: 25px;
+}
+/* Ajoutez cette classe CSS à vos cartes */
+.random-margin {
+    margin: 10px 5px; /* Ajustez les marges selon vos préférences */
+}
+.custom-icon-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.custom-icon-item {
+    flex-basis: calc(33.33% - 20px); /* Ajustez la largeur en fonction de votre mise en page */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.custom-icon {
+    font-size: 36px; /* Ajustez la taille de l'icône */
+}
+
+.custom-text {
+    margin-top: 10px;
+}
+.custom-icon-list li {
+    margin-bottom: 20px; /* Ajustez la valeur selon l'espace souhaité */
+}
+/* Style pour la section "Découvrez aussi" */
+#decouvrez-aussi {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+}
+
+#decouvrez-aussi h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Style pour les cartes d'offres spéciales */
+.special-offers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.offer-card {
+    flex: 0 0 calc(50% - 20px); /* Deux cartes par ligne, avec un espace de 20px entre elles */
+    background-color: #1c985a;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: left;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.offer-card h3 {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.offer-card p {
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.offer-card a.btn {
+    background-color: #e5e50e;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.offer-card a.btn:hover {
+    background-color: #e5e50e;
+}
+/* Styles pour la barre de recherche */
+.navbar-form {
+    width: 100%; /* Ajustez la largeur selon vos préférences */
+    max-width: 1000px; /* Largeur maximale de la barre de recherche */
+}
+
+.form-control {
+    width: 100%;
+}
+
+.btn-search {
+    background-color: #e8d719; /* Couleur du bouton */
+    color: #fff; /* Couleur du texte du bouton */
+    border: none;
+}
+
+/* Style pour la couleur au survol du bouton de recherche */
+.btn-search:hover {
+    background-color: #e8d719; /* Couleur au survol */
+}

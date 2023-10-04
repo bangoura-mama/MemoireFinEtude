@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application de Tourisme Virtuel</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="assets/images/logo KND1.jpg" alt="Votre Logo" width="100" height="100" class="d-inline-block align-top">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+
+    <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
+        <form class="form-inline navbar-form w-50"> <!-- Ajoutez la classe w-50 pour la largeur -->
+            <input class="form-control mr-sm-2" type="text" placeholder="Kay Niou Dem..." aria-label="Search">
+            <button class="btn btn-search my-2 my-sm-0" type="submit"> Ou allons-nous cette fois?</button>
+        </form>
+    </div>
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link nav-link-light-effect" href="#decouvrir">Découvrir</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link nav-link-light-effect" href="#apropos">A Propos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link nav-link-light-effect" href="#contact">Contact</a>
+        </li>
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+</nav>
+
+
+
+<!-- Section de bannière -->
+<header class="jumbotron text-center">
+    <h1 class="display-4">Explorez le Sénégal en ligne</h1>
+    <p class="lead">Découvrez les merveilles du Sénégal depuis chez vous</p>
+    <a class="btn btn-primary btn-lg" href="#decouvrir" role="button">Commencer</a>
+</header>
+<!-- Texte d'animation avec classes Bootstrap -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <div class="animated-text">
+                <p class="lead">
+                    Le Sénégal, situé à l'extrémité ouest de l'Afrique, est un pays d'une beauté incomparable. 
+                    Avec ses plages dorées, ses parcs nationaux époustouflants et sa richesse culturelle, 
+                    il offre une expérience touristique unique. Explorez les ruelles colorées de Dakar, 
+                    découvrez la majesté du désert de Lompoul, plongez dans la culture sérère de Joal-Fadiouth 
+                    et laissez-vous émerveiller par la faune du parc national de Niokolo-Koba. 
+                    Le Sénégal a tant à offrir aux voyageurs curieux et aux amoureux de la nature. 
+                    Préparez-vous à une aventure inoubliable !
+                </p>
+            </div>
+        </div>
+    </div>
+   
+</div>
+
+
+
+<section id="sites-visites" class="container py-5">
+    <h2 class="text-center">Les sites les plus en Vogue </h2>
+    <!-- Ajoutez ici les contenus des sites visités -->
+</section>
+
+<section id="decouvrir" class="container py-5">
+  
+    <!-- Exemple de carte Bootstrap pour un lieu touristique -->
+    <!-- Exemple de carte Bootstrap pour un lieu touristique -->
+<div class="card-deck">
+    <div class="card card-1 bounce-continuous with-background">
+        <div class="background-image">
+            <!-- Contenu de la carte 1 -->
+            <div class="card-body">
+                <h5 class="card-title">Le lac Rose à Dakar</h5>
+                <p class="card-text"></p>
+                
+                <!-- Bouton "Explorer" pour rediriger vers la page "Lac Rose" -->
+                <a class="btn btn-primary" [routerLink]="['/lacrose']">Explorer</a>
+                
+
+            </div>
+        </div>
+    </div>
+    <!-- Ajoutez d'autres cartes similaires ici pour d'autres lieux touristiques -->
+
+
+    
+    
+    
+        
+        <div class="card card-2 bounce-continuous with-background">
+            <div class="background-image">
+                <!-- Contenu de la carte 1 -->
+                <div class="card-body">
+                    <h5 class="card-title">L'ile de Gorée</h5>
+                    <p class="card-text"></p>
+                    
+                  
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="card card-3 bounce-continuous with-background">
+            <div class="background-image">
+                <!-- Contenu de la carte 1 -->
+                <div class="card-body">
+                    <h5 class="card-title">Les dunes de Lompoul  </h5>
+                    <p class="card-text"> </p>
+                    
+                    <!-- Étoiles de notation -->
+                  
+                </div>
+            </div>
+        </div>
+        
+        <div class="card card-4 bounce-continuous with-background">
+            <div class="background-image">
+                <!-- Contenu de la carte 4 -->
+                <div class="card-body">
+                    <h5 class="card-title">La Mosquée de Touba</h5>
+                    <p class="card-text"></p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="card card-5 bounce-continuous with-background">
+            <div class="background-image">
+                <!-- Contenu de la carte 5 -->
+                <div class="card-body">
+                    <h5 class="card-title">La ville de Saint-Louis</h5>
+                    <p class="card-text"></p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="card card-6 bounce-continuous with-background">
+            <div class="background-image">
+                <!-- Contenu de la carte 6 -->
+                <h5 class="card-title">Les îles du Sine-Saloum </h5>
+                <p class="card-text">jitdrdfgyjjohytdrtfgyujkjhtuyrtesxdcvujhytr-edtfgyu </p>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section "Découvrez aussi" avec style personnalisé -->
+<section id="decouvrez-aussi" class="container py-5">
+    <h2 class="text-center">Découvrez aussi</h2>
+    <!-- Liste des sites touristiques avec des icônes personnalisées -->
+    <ul class="list-unstyled custom-icon-list">
+        <li>
+            <i class="fas fa-tree"></i> Le Parc National de Dakar
+        </li>
+
+        <li>
+            <i class="fas fa-water"></i> Les Chutes de Dindefelo
+        </li>
+
+        <li>
+            <i class="fas fa-paw"></i> La Réserve de Bandia
+        </li>
+
+      
+
+        <li>
+            <i class="fas fa-sun"></i> L'acrobaobab
+        </li>
+
+        <li>
+            <i class="fas fa-tree"></i>Le Parc des Oiseaux de Djoudj
+        </li>
+
+       
+        <li>
+            <i class="fas fa-tree"></i>Le Parc National Niokolo-Koba
+        </li>
+
+        <li>
+            <i class="fas fa-water"></i> La Plage de N'Gor
+        </li>
+
+        <li>
+            <i class="fas fa-building"></i> Le Village de Joal-Fadiouth
+        </li>
+    </ul>
+    <div class="special-offers">
+        <div class="offer-card">
+            <h3>Offre Spéciale famille</h3>
+            <p>Économisez 20% sur vos séjours avec la formule Family First.</p>
+            <a href="#" class="btn btn-primary">Voir l'offre</a>
+        </div>
+        <div class="offer-card">
+            <h3>Offre Spéciale Vacances</h3>
+            <p>Forfait tout compris pour les Chutes de Dindefelo : Hébergement, repas et visites guidées.</p>
+            <a href="#" class="btn btn-primary">Voir l'offre</a>
+        </div>
+        <!-- Ajoutez d'autres offres spéciales ici -->
+    </div>
+</section>
+
+
+
+<!-- Section d'informations pratiques -->
+<section id="apropos" class="container py-5">
+  <!-- Section À Propos de Nous -->
+<!-- Section À Propos de Nous -->
+<section id="apropos" class="container py-5">
+    <h2 class="text-center mb-4">À Propos de Nous</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="text-center">
+                <i class="fas fa-5x fa-globe mb-3"></i>
+                <h3>Notre Mission</h3>
+            </div>
+            <p>Nous sommes passionnés par la découverte et la promotion de la beauté du Sénégal. Notre mission est de vous offrir une expérience touristique virtuelle inoubliable.</p>
+        </div>
+        <div class="col-md-4">
+            <div class="text-center">
+                <i class="fas fa-5x fa-heart mb-3"></i>
+                <h3>Nos Valeurs</h3>
+            </div>
+            <ul>
+                <li><i class="fas fa-check-circle"></i> Engagement envers la qualité</li>
+                <li><i class="fas fa-check-circle"></i> Respect de la culture locale</li>
+                <li><i class="fas fa-check-circle"></i> Durabilité et responsabilité</li>
+                <li><i class="fas fa-check-circle"></i> Innovation continue</li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <div class="text-center">
+                <i class="fas fa-5x fa-users mb-3"></i>
+                <h3>Notre Équipe</h3>
+            </div>
+            <p>Nous sommes une équipe dévouée de passionnés du voyage, de développeurs et de créatifs qui travaillent ensemble pour vous offrir la meilleure expérience virtuelle du Sénégal.</p>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Ajoutez ici des informations pratiques sur l'application -->
+</section>
+
+
+<!-- Pied de page -->
+<footer id="contact" class="bg-dark text-white text-center py-3">
+    <div class="container">
+        <p>Contactez-nous à aux adresses</p>
+        <p>ndaissatou610@gmail.com ou mbangoura@gmail.com </p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
+
+
+<router-outlet></router-outlet>
